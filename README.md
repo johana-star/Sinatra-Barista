@@ -8,14 +8,14 @@ Other projects related Sinatra Barista include:
 * [Polyglot Cafe](https://github.com/joncortez/polyglotcafe)
 * [Coffee](https://github.com/jayzeng/coffee)
 
-=== Routing ===
+### Routing ###
 
 This app responds to the following routes:
 
-* '/'
-* '/shops'
-* '/shop/:id'
-* '/shop/:id/baristas'
-* '/shop/:id/barista/:name'
-* '/shop/:id/coffees'
-* '/baristas'
+* get '/'
+* get '/shops'
+* get '/shop/:id'
+* get '/shop/:id/baristas'
+* get '/shop/:id/barista/:name'
+* get '/shop/:id/coffees'
+* get '/baristas'
