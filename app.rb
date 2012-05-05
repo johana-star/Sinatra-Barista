@@ -1,13 +1,15 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
-# vi:sw=2:ts=2:et
+# vi:sw=2:ts=2:et:ft=ruby
 
 require 'bundler/setup'
 Bundler.require :default, ENV['RACK_ENV']
 require 'sinatra/reloader' if development?
 
+APP_DIR = File.dirname(__FILE__)
+
 configure :development do
-  DataMapper.setup(:default, "sqlite:///#{Dir.pwd}/app.db")
+  DataMapper.setup(:default, "sqlite:///#{APP_DIR}/app.db")
 end
 
 configure :production do
@@ -38,5 +40,23 @@ end
 
 get '/baristas' do
   erb :baristas
+end
+
+get '/dm/:action' do
+  require  'dm-migrations'
+
+  Dir.glob("#{APP_DIR}/models/*.rb", &method(:require))
+  DataMapper.finalize
+
+  case params[:action]
+  when 'migrate'
+    DataMapper.auto_migrate!
+    'migrated'
+  when 'upgrade'
+    DataMapper.auto_upgrade!
+    'upgraded'
+  else
+    'unknown action'
+  end
 end
 
