@@ -4,7 +4,7 @@
 
 require 'bundler/setup'
 Bundler.require :default, ENV['RACK_ENV'].to_sym
-#require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 
 get '/' do
   'hello world'
