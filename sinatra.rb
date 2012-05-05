@@ -1,18 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  '<h2>Barista Tasks</h2
-  <ul>
-    <li>A Barista wants to be able to list their coffees they use.</li>
-    <li>A Barista wants to be able to comment on reviews.</li>
-    <li>A Barista wants to be able to list their prices for coffee.</li>
-    <li>A Barista wants to be able to select their specialty.</li>
-    <li>A Barista or coffee drinker wants to be able to add or view outlets, wifi, or other information about the coffee shop.</li>
-    <li>A coffee drinker wants to be able to follow their favorite Barista.</li>
-    <li>A Barista wants to be able to send an alert to all of their coffee drinkers.</li>
-  </ul>
-  
-  <h2>Barista Dev Team</h2>
-  
-  @adron'
+  erb :index
 end
