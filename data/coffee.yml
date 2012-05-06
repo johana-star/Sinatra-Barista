@@ -1,14 +1,19 @@
-- :id 1
-  :name Cappuccino
-  
-- :id 2
-  :name Latte
-  
-- :id 3
-  :name Mocha
-  
-- :id 4
-  :name  Macchiato
+coffee:
+  id: 1
+  name: Cappuccino
 
-- :id 5
-  :name  Espresso
+coffee:
+  id: 2
+  name: Latte
+
+coffee:
+  id: 3
+  name: Mocha
+
+coffee:
+  id: 4
+  name:  Macchiato
+
+coffee:
+  id: 5
+  name:  Espresso

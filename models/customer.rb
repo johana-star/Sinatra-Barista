@@ -5,9 +5,7 @@ class Customer
 
   property :id, Serial
   property :name, String
-
-  belongs_to :shop
-
-  has n, :customers
+  
+  has n, :reviews
 end
 
