@@ -1,3 +1,58 @@
+barista:
+  id: 1
+  name: Alex
+  specialty: 1
+
+barista:
+  id: 2
+  name: Bo3b
+  specialty: 3
+
+barista:  
+  id: 3
+  name: Pat
+
+barista:
+  id: 4
+  name: Joe
+  specialty: 5
+
+comment:
+  id: 1
+  description: Jackson rocks
+  review_id: 1
+  customer_id: 1
+
+customer:
+  id: 1
+  name: Jackson
+
+customer:
+  id: 2
+  name: Washington
+
+customer:
+  id: 3
+  name: Cherry
+
+customer:
+  id: 4
+  name: Columbia
+
+review:
+  id: 1
+  description: Alex is good
+  customer_id: 1
+  barista_id: 1
+  comments:
+    - id 1
+
+review:
+  id: 2
+  description: Pat sucks
+  customer_id: 2
+  barista_id: 3
+
 shop:
   id: 1
   name: CoffeeMe
@@ -7,23 +62,18 @@ shop:
   baristas: 
     - id: 2
     - id: 4
-    
   coffees:
     - id: 1
       price: 9.12
-
     - id: 2
       price: 8.12
-
     - id: 3
       price: 5.12
-
     - id: 4
       price: 7.12
-
     - id: 5
       price: 6.12
-  
+
 shop:
   id: 2
   name: CoffeeYou
@@ -36,31 +86,43 @@ shop:
   coffees:
     - id: 1
       price: 9.72
-
     - id: 2
       price: 8.72
-
     - id: 4
       price: 7.72
-
     - id: 5
       price: 6.72
 
 
-barista:
-  id: 1
-  name: Alex
 
-barista:
-  id: 2
-  name: Bo3b
 
-barista:  
-  id: 3
-  name: Pat
 
-barista:
-  id: 4
-  name: Joe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

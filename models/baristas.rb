@@ -10,5 +10,6 @@ class Barista
 
   has n, :reviews
   has n, :specialties
+  has n, :comments
 end
 

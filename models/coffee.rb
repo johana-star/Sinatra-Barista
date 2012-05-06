@@ -7,5 +7,6 @@ class Coffee
   property :name, String
 
   has n, :shops
+  has n, :specialists, :through => :baristas
 end
 
