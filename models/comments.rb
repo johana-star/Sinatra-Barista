@@ -7,6 +7,6 @@ class Comment
   property :description, Text
 
   belongs_to :review
-  belongs_to :customer
+  belongs_to :barista
 end
 
