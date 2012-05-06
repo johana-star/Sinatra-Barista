@@ -7,6 +7,7 @@ class Review
   property :description, Text
 
   belongs_to :customer
+  belongs_to :barista
 
   has n, :comments
 end
