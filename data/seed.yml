@@ -1,0 +1,66 @@
+shop:
+  id: 1
+  name: CoffeeMe
+  address: 119 Pike
+  phone: 206-555-1111
+  twitter: @coffeeme
+  baristas: 
+    - id: 2
+    - id: 4
+    
+  coffees:
+    - id: 1
+      price: 9.12
+
+    - id: 2
+      price: 8.12
+
+    - id: 3
+      price: 5.12
+
+    - id: 4
+      price: 7.12
+
+    - id: 5
+      price: 6.12
+  
+shop:
+  id: 2
+  name: CoffeeYou
+  address: 206 1st Ave S
+  phone: 206-555-2222
+  twitter: @coffeeyou
+  baristas: 
+    - id: 1
+    - id: 2
+  coffees:
+    - id: 1
+      price: 9.72
+
+    - id: 2
+      price: 8.72
+
+    - id: 4
+      price: 7.72
+
+    - id: 5
+      price: 6.72
+
+
+barista:
+  id: 1
+  name: Alex
+
+barista:
+  id: 2
+  name: Bo3b
+
+barista:  
+  id: 3
+  name: Pat
+
+barista:
+  id: 4
+  name: Joe
+
+
